@@ -1,0 +1,18 @@
+meta {
+  name: crearPrograma
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3306/api/programas
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Desarrollo de Software",
+    "duracion": "6 meses"
+  }
+}
